@@ -8,27 +8,27 @@
         <meta name="viewport" content="width=device-width">
         <meta name="robots" content="index,follow">
         <meta name="author" content="Jaehun">
+        <link href="self-CSS.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <div id="header">
+        <header>
             <h1>About me</h1>
-            <hr>
             <p>안녕하세요? 제 이름은 김재훈입니다. 올해 대학교를 입학한 새내기입니다.
                 다양한 관심분야와 취미 활동을 하고 있습니다. 즐거운 하루들 되세요 ~
             </p>
-        </div>
+        </header>
 
-        <div id="navigation">
-            <h2>목차</h2>
-            <ul>
-                <li><a href="#interest">관심분야</a></li>
-                <li><a href="#hobby">취미활동</a></li>
-                <li><a href="#timetable">강의시간표</a></li>
-            </ul>
-        </div>
+            <nav>
+                <h2>목차</h2>
+                <ul id="ul">
+                    <li><a href="#interest">관심분야</a></li>
+                    <li><a href="#hobby">취미활동</a></li>
+                    <li><a href="#timetable">강의시간표</a></li>
+                </ul>
+            </nav>
 
-        <div id="container">
-            <div>
+        <section>
+            <article>
                 <h2 id="interest">관심분야</h2>
                 <hr>
                 <ul>
@@ -57,9 +57,9 @@
                             <li>자바(Java)</li>
                         </ul>        
                 </ul>
-            </div>
+            </article>
 
-            <div>
+            <article>
                 <h2 id="hobby">취미 활동</h2>
                 <hr>
                 <table border="1">
@@ -68,34 +68,38 @@
                     </tfoot>
                     <tbody>
                         <tr>
-                            <td><img src="media/game.jpg" width="200" height="200" alt="게임"></td>
-                            <td><img src="media/soccer.jpg" width="200" height="200" alt="축구"></td>
-                            <td><img src="media/walk.jpg" width="200" height="200" alt="산책"></td>
+                            <td><img src="media/game.jpg" width="300" height="200" alt="게임"></td>
+                            <td><img src="media/soccer.jpg" width="300" height="200" alt="축구"></td>
+                            <td><img src="media/walk.jpg" width="300" height="200" alt="산책"></td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
+            </article>
 
-            <div>
+            <article>
                 <h2 id="timetable">강의 시간표(2026년 1학기)</h2>
                 <hr>
-                <table border="1">
+                <table class="timetable" border="1">
                     <thead>
                         <tr><th>구분</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr>
                     </thead>
                     <tbody>
                         <tr><td>09</td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr><td>10</td><td></td><td></td><td rowspan="3">인터넷 콘텐츠<br>(공603)</td><td rowspan="3">컴퓨터 과학개론<br>(공608)</td><td></td></tr>
+                        <tr><td>10</td><td></td><td></td><td rowspan="3" class="in">인터넷 콘텐츠<br>(공603)</td><td rowspan="3" class="com">컴퓨터 과학개론<br>(공608)</td><td></td></tr>
                         <tr><td>11</td><td></td><td></td><td></td></tr>
                         <tr><td>12</td><td></td><td></td><td></td></tr>
-                        <tr><td>01</td><td></td><td></td><td rowspan="2">sw개발 문제해결능력<br>(공608)</td><td></td><td></td></tr>
-                        <tr><td>02</td><td rowspan="3">프로그래밍 언어실습I<br>(공603)</td><td></td><td rowspan="2">디자인 씽킹<br>(예215)</td><td></td></tr>
+                        <tr><td>01</td><td></td><td></td><td rowspan="2" class="sw">sw개발 문제해결능력<br>(공608)</td><td></td><td></td></tr>
+                        <tr><td>02</td><td rowspan="3" class="pro">프로그래밍 언어실습I<br>(공603)</td><td></td><td rowspan="2" class="di">디자인 씽킹<br>(예215)</td><td></td></tr>
                         <tr><td>03</td><td></td><td></td><td></td></tr>
                         <tr><td>04</td><td></td><td></td><td></td><td></td></tr>
                         <tr><td>05</td><td></td><td></td><td></td><td></td><td></td></tr>
                     </tbody>
                 </table>
-            </div>
-        </div>
+            </article>
+        </section>
+        <footer>
+            <br><a href="survey3.html" target="_blank">설문조사</a>
+            <p>Copyright 2026 by MYONGJI COLLEGE</p>
+        </footer>
     </body>
 </html>
